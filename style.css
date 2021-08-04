@@ -1,0 +1,124 @@
+:root{
+--bright-orange:hsl(31, 77%, 52%);
+--dark-cyan:hsl(184, 100%, 22%);
+--xdark-cyan: hsl(179, 100%, 13%);
+--paragraph:hsla(0, 0%, 100%, 0.75);
+--light-gray:hsl(0, 0%, 95%);
+}
+
+
+body{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	width: 100%;
+ 	background-color: var(--light-gray);
+}
+
+
+section{
+	display: flex;
+	justify-content: center;
+	margin: 70px auto;
+}
+
+.card{
+	width: 20%;
+	padding: 40px 5px 40px 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.sedans__card{
+	background-color: var(--bright-orange);
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.sedans__card button{
+	color: var(--bright-orange);
+}
+
+.suvs__card{
+	background-color: var(--dark-cyan);
+}
+
+.suvs__card button{
+	color: var(--dark-cyan);
+}
+
+.luxury__card{
+	background-color: var(--xdark-cyan);
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.luxury__card button{
+	color: var(--xdark-cyan);
+}
+
+
+.car__content{
+	width: 83%;
+	color: #fff;
+}
+.car__content h2{
+	font-family: 'Big Shoulders Display', cursive;
+	text-transform: uppercase;
+}
+
+.car__content p{
+	font-family: 'Lexend Deca', sans-serif;
+	margin-bottom: 70px;
+	font-weight: normal;
+}
+button{
+	border:1px solid #fff;
+	border-radius: 2rem;
+	padding: 15px 30px;
+	font-weight: bold;
+	background-color: #fff;
+}
+
+button:hover{
+	color: #fff;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+
+@media(max-width: 56em){
+
+section{
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	overflow-y: none;
+}
+
+
+.card{
+	width: 90%;
+	padding: 40px 5px 40px 28px;
+	display: flex;
+	flex-direction: column;
+}
+
+.car__content{
+	width: 75%;
+	color: #fff;
+}
+
+.sedans__card{
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 0px;
+	border-top-right-radius:10px;
+}
+
+.luxury__card{
+	background-color: var(--xdark-cyan);
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+}
